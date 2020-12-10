@@ -6,9 +6,9 @@ public class Main {
     }
 
     public static NumberFactorial factorial(NumberFactorial n) {
-        n.showNumber();
-        return n.equals(new NumberFactorial(0)) ? new NumberFactorial(1) :
-                n.multiply(factorial(new NumberFactorial(n.difference(new NumberFactorial(1)))));
+        return n.equals(new NumberFactorial(0)) ?
+                new NumberFactorial(1) :
+                n.multiply(factorial
+                        (new NumberFactorial(n.difference(new NumberFactorial(1)))));
     }
-
 }
